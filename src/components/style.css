@@ -113,7 +113,14 @@
 .reaction_button .icon:nth-child(2){
     margin-top: 1vh;
 }
-
+.new_post{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+}
 .nav{
     display: flex;
     width: 100%;
@@ -126,4 +133,7 @@
     z-index: 100;
     justify-content: space-evenly;
     align-items: center;
+}
+.point{
+    cursor: pointer;
 }

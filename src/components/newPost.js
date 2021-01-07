@@ -4,8 +4,8 @@ import './style.css'
 export class newPost extends Component {
     render() {
         return (
-            <div>
-                newpost
+            <div className="new_post">
+                Coming Soon
             </div>
         )
     }

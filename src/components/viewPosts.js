@@ -8,6 +8,12 @@ import './style.css'
 /* Image Import */
 import post1 from "./images/post/post1.jpg"
 import profile1 from "./images/profile/profile1.jpg"
+import post2 from "./images/post/post2.jpg"
+import profile2 from "./images/profile/profile2.jpg"
+import post3 from "./images/post/post3.jpg"
+import profile3 from "./images/profile/profile3.jpg"
+import post4 from "./images/post/post4.jpg"
+import profile4 from "./images/profile/profile4.jpg"
 
 function Post({profileImage, userName, timeStamp, caption, postImage, likes, shares, comments}) {
     const {show, alterShow} = useState(false)
@@ -81,6 +87,99 @@ class viewPosts extends Component {
                                 str:"Very nice"
                             }
                         ]
+                    },
+                    {
+                        profileImage:profile2,
+                        userName:"Papai Parua",
+                        timeStamp:"November 12, 2020 at 3:00 PM",
+                        caption:"Healing......",
+                        postImage:post2,
+                        likes:221,
+                        shares:39,
+                        comments:[
+                            {
+                                profile:"..///",
+                                username:"name",
+                                str:"Very nice"
+                            },
+                            {
+                                profile:"..///",
+                                username:"name",
+                                str:"Very nice"
+                            },
+                            {
+                                profile:"..///",
+                                username:"name",
+                                str:"Very nice"
+                            },
+                            {
+                                profile:"..///",
+                                username:"name",
+                                str:"Very nice"
+                            }
+                        ]
+                    },
+                    {
+                        profileImage:profile3,
+                        userName:"Papai Parua",
+                        timeStamp:"November 12, 2020 at 3:00 PM",
+                        caption:"Animal are most loyal friends",
+                        postImage:post3,
+                        likes:221,
+                        shares:39,
+                        comments:[
+                            {
+                                profile:"..///",
+                                username:"name",
+                                str:"Very nice"
+                            },
+                            {
+                                profile:"..///",
+                                username:"name",
+                                str:"Very nice"
+                            },
+                            {
+                                profile:"..///",
+                                username:"name",
+                                str:"Very nice"
+                            },
+                            {
+                                profile:"..///",
+                                username:"name",
+                                str:"Very nice"
+                            }
+                        ]
+                    },
+                    {
+                        profileImage:profile4,
+                        userName:"Papai Parua",
+                        timeStamp:"November 12, 2020 at 3:00 PM",
+                        caption:"My sweet home",
+                        postImage:post4,
+                        likes:221,
+                        shares:39,
+                        comments:[
+                            {
+                                profile:"..///",
+                                username:"name",
+                                str:"Very nice"
+                            },
+                            {
+                                profile:"..///",
+                                username:"name",
+                                str:"Very nice"
+                            },
+                            {
+                                profile:"..///",
+                                username:"name",
+                                str:"Very nice"
+                            },
+                            {
+                                profile:"..///",
+                                username:"name",
+                                str:"Very nice"
+                            }
+                        ]
                     }
                 ]
         }
@@ -90,7 +189,7 @@ class viewPosts extends Component {
         const { data } = this.state
         return (
             <div className="sub_post">
-                {data.map(post=><Post {...post} key={post} />)}
+                {data.map((post, index)=><Post {...post} key={index} />)}
             </div>
         )
     }
