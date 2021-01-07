@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Yellowtail&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px  ;
+}
+
+.headbar{
+    display: flex;
+    width: 100%;
+    position: fixed;
+    height: 10vw;
+    font-weight: 900;
+    background-color: rgb(255, 255, 255);
+    font-family: 'Yellowtail', cursive;
+    font-size: 6vw;
+    z-index: 10;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 0.1px solid rgb(145, 145, 145);
+}
+
+.post_section{
+    display: flex;
+    width: 100%;
+    position: relative;
+    top: 10vw;
+}
+
+.nav{
+    display: flex;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    height: 10vw;
+    color: #ffffff;
+    background-color: rgb(27, 164, 255);
+    font-size: 6vw;
+    z-index: 10;
+    justify-content: space-evenly;
+    align-items: center;
+}
