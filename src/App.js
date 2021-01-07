@@ -20,7 +20,7 @@ class App extends Component {
     return (
       <div>
         <div className="headbar">
-          Postgram
+          Postsgram
         </div>
         <div className="post_section">
           {viewPost?<View />:<Create />}
